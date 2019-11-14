@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:analyzer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="LogAnalyzer 2.0" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="0" />
+        </Grid.RowDefinitions>
 
+        <Ribbon x:Name="Ribbon" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Title="meNU">
+            <RibbonApplicationMenu>
+                <RibbonApplicationMenuItem>asasas</RibbonApplicationMenuItem>
+            </RibbonApplicationMenu>
+            <RibbonTab x:Name="Main">
+                
+            </RibbonTab>
+            <RibbonTab x:Name="Settings">
+
+            </RibbonTab>
+        </Ribbon>
     </Grid>
 </Window>
